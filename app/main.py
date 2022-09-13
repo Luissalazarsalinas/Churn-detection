@@ -31,7 +31,7 @@ class Features(BaseModel):
     Tenure_Months: int
     Mutiple_lines: int
     Internet_services: int
-    Oline_Security: int
+    Online_Security: int
     Online_Backup: int
     Device_Protection: int
     Tech_support: int
