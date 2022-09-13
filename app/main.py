@@ -59,10 +59,9 @@ def predict(data: Features):
     # predictions
     predictions = model.predict(data_f)
 
-    proba = pd.DataFrame(model.predict_proba(data_f), columns = ["Not Churn", "Churn"])
-
-    proba_churn = (proba.iloc[:, 1])*100
-    proba_nochurn = (proba.iloc[:, 0])*100
+    proba = model.predict_proba(data_f)
+    proba_nochurn = np.round((proba[0][0])*100, 2)
+    proba_churn = np.round((proba[0][1])*100, 2)
 
     if predictions == 1:
         return {f"The probability that the customer leaves the company is {proba_churn} percent"}
