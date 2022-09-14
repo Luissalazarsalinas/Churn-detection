@@ -1,1 +1,43 @@
-# Churn-detection
+# Churn detection
+
+# **Loan Default Prediction**
+
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org)
+[![streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
+[![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)](https://www.heroku.com/platform)
+
+An end-to-end Machine Learning Project to predict Loan Default.
+
+## **Problem Statement**
+Small Business Administration(SBA) is an agency of the Federal Government that exists to serve, support, and protect the interests of small businesses. One way SBA assist these small business enterprises is through a loan guarantee program which is designed to encourage the bank to grant loans to small business. But, since SBA loans only guarantee a portion of the entire loan balance, banks will incur some losses if a small business defaults on its SBA-guaranteed loan. Therefore, banks are still faced with a difficult choice as to whether they should grant such a loan because of the high risk of default. One way to uniform their decision-making is through analyzing relevant historical data.
+
+This Streamlit App utilizes a Machine Learning model to predict if a loan will be paid in full or not, based on the following criteria: type of industry, number of business employees, the amount disbursed by the bank, Gross Amount of Loan Approved by Bank, SBA's Guaranteed Amount of Approved Loan and Loan term in months. 
+
+The App can be viewed through this [link](https://loan-default-app.herokuapp.com/)
+
+## **Data Preparation**
+The original data set is from the U.S.SBA loan database, which includes historical data from 1987 through 2014 (899,164 observations) with 27 variables. The data set includes information on whether the loan was paid off in full or if the SBA had to charge off any amount and how much that amount was. 
+
+According to Li, Mickel, & Taylor 2018, the project filtered the  original dataset to California State and  add the following new variables:
+
+- New
+- Portion 
+- RealEstate
+- Recession
+- Default(Target)
+
+
+[Dataset link](https://amstat.tandfonline.com/doi/full/10.1080/10691898.2018.1434342)
+
+## **Modelling**
+
+In this project 3 different classification algorithms were tested namely:
+- Logistic Regression (Base Line)
+- Random Forest
+- Extra Tree
+- XGBoots
+
+The final model used for the App was the XGBoost Classifier model which had an accuracy score of 0.95 and an ROC-AUC score of 0.94
+
+# **Deploy**
+The Streamlit App was deployed on Heroku
