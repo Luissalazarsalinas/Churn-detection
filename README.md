@@ -12,7 +12,7 @@ The globalization and advancements of telecommunication industry, exponentially 
 Therefore, in this project we develop a Streamlit App that utilizes a Machine Learning model(XGBoost) as an API to detect whether the customers from a Telco company will churns or not the company, based on the following criteria: Gender, Partner, Dependents, Tenure Months, Multiple Lines, Internet Service, Online Security, 
 Online Backup, Device Protection, Tech Support, Streaming TV, Streaming Movies, Contract, Payment Method, Monthly Charge, CLTV. 
 
-The App can be viewed through this [link](https://loan-default-app.herokuapp.com/)
+The App can be viewed through this [link](https://luissalazarsalinas-churn-detection-streamlit-app-r6b54r.streamlitapp.com/)
 
 ### **Data Preparation**
 The IBM's Telco customers dataset contains information about a fictional telco company that provid home phone and internet services to 7043 customers in California. It indicates which customers have left, stayed, or signed up for their service. Multiple important demographics are included for each customer, as well as a Satisfaction Score, Churn Score, and Customer Lifetime Value (CLTV) index, whit a total of 32 features or predictor variables include in this dataset.
