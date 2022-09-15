@@ -1,6 +1,4 @@
-# Churn detection
-
-# **Loan Default Prediction**
+# **Churn detection**
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org)
 [![streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
@@ -16,26 +14,29 @@ Online Backup, Device Protection, Tech Support, Streaming TV, Streaming Movies, 
 
 The App can be viewed through this [link](https://loan-default-app.herokuapp.com/)
 
-## **Data Preparation**
+### **Data Preparation**
 The IBM's Telco customers dataset contains information about a fictional telco company that provid home phone and internet services to 7043 customers in California. It indicates which customers have left, stayed, or signed up for their service. Multiple important demographics are included for each customer, as well as a Satisfaction Score, Churn Score, and Customer Lifetime Value (CLTV) index, whit a total of 32 features or predictor variables include in this dataset.
 
 Preprocessing steps:
 
 
-Source: [IBM]())
+Source: [IBM]()
 
-
-[Dataset link](https://amstat.tandfonline.com/doi/full/10.1080/10691898.2018.1434342)
-
-## **Modelling**
-
-In this project 3 different classification algorithms were tested namely:
+### **Modelling**
+Machine Learning Algorithms that were tested:
 - Logistic Regression (Base Line)
-- Random Forest
-- Extra Tree
+- KNeighbor
 - XGBoots
 
-The final model used for the App was the XGBoost Classifier model which had an accuracy score of 0.95 and an ROC-AUC score of 0.94
+Xgboost was the model with better performance with the validation set:
+- Accuracy:
+- F1-Score:
+- ROC-AUC:
 
-# **Deploy**
+The final model(XGBoost)
+- Accuracy:
+- F1-Score:
+- ROC-AUC:
+
+### **Deploy**
 The Streamlit App was deployed on Heroku
