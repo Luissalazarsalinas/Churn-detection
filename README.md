@@ -13,8 +13,10 @@ Therefore, in this project we develop a Streamlit App that utilizes a Machine Le
 Online Backup, Device Protection, Tech Support, Streaming TV, Streaming Movies, Contract, Payment Method, Monthly Charge, CLTV. 
 
 The App can be viewed through this [link](https://luissalazarsalinas-churn-detection-streamlit-app-r6b54r.streamlitapp.com/)
-Machine Learning: [NoteBook]()
-Survaival Analysis: [NoteBook]()
+
+Machine Learning: [NoteBook](l)
+
+Survaival Analysis: [NoteBook](;)
 
 ## Machine Learning
 
