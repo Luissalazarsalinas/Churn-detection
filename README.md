@@ -13,14 +13,23 @@ Therefore, in this project we develop a Streamlit App that utilizes a Machine Le
 Online Backup, Device Protection, Tech Support, Streaming TV, Streaming Movies, Contract, Payment Method, Monthly Charge, CLTV. 
 
 The App can be viewed through this [link](https://luissalazarsalinas-churn-detection-streamlit-app-r6b54r.streamlitapp.com/)
+Machine Learning: [NoteBook]()
+Survaival Analysis: [NoteBook]()
+
+## Machine Learning
 
 ### **Data Preparation**
 The IBM's Telco customers dataset contains information about a fictional telco company that provid home phone and internet services to 7043 customers in California. It indicates which customers have left, stayed, or signed up for their service. Multiple important demographics are included for each customer, as well as a Satisfaction Score, Churn Score, and Customer Lifetime Value (CLTV) index, whit a total of 32 features or predictor variables include in this dataset.
 
-Preprocessing steps:
+Data preprocessing steps:
 
+- Clean the data: removed duplicate values, missing values, unnecessary and leakage variables
+- Transform no-numerical variables to numerical variables
+- Split the data into train, validation and test sets
+- Handled unbalanced data with oversampling technique - SMOTE
+- Select the best set of features using Recursive Feature Elimination with Cross Validation(RFECV) technique 
 
-Source: [IBM]()
+Source: [IBM](https://community.ibm.com/accelerators/catalog/content/Telco-customer-churn)
 
 ### **Modelling**
 Machine Learning Algorithms that were tested:
@@ -29,14 +38,17 @@ Machine Learning Algorithms that were tested:
 - XGBoots
 
 Xgboost was the model with better performance with the validation set:
-- Accuracy:
-- F1-Score:
-- ROC-AUC:
+- Accuracy: 0.93
+- F1-Score: 0.90
+- ROC-AUC: 0.93
 
-The final model(XGBoost)
-- Accuracy:
-- F1-Score:
-- ROC-AUC:
+Performance of the final model(XGBoost) with the test set:
+- Accuracy: 0.99
+- F1-Score: 0.98
+- ROC-AUC: 0.98
 
-### **Deploy**
-The Streamlit App was deployed on Heroku
+### **Deployment**
+- The Machine learning API was deployed using the Dockerfile on Heroku
+- The streamlit app was deployed on Streamlit Cloud and accesses the ML api deployed on Heroku
+
+##  Statistical Analysis - Survival Analysis
