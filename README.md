@@ -16,7 +16,7 @@ Online Backup, Device Protection, Tech Support, Streaming TV, Streaming Movies, 
 
 The App can be viewed through this [link](https://luissalazarsalinas-churn-detection-streamlit-app-r6b54r.streamlitapp.com/)
 
-Machine Learning: [NoteBook](l)
+Machine Learning: [NoteBook](https://github.com/Luissalazarsalinas/Churn-detection/blob/master/NoteBooks/Customer_Churn.ipynb)
 
 
 ## Machine Learning
