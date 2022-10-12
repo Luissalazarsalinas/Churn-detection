@@ -18,7 +18,6 @@ The App can be viewed through this [link](https://luissalazarsalinas-churn-detec
 
 Machine Learning: [NoteBook](l)
 
-Survaival Analysis: [NoteBook](;)
 
 ## Machine Learning
 
@@ -54,5 +53,3 @@ Performance of the final model(XGBoost) with the test set:
 ### **Deployment**
 - The Machine learning API was deployed using the Dockerfile on Heroku
 - The streamlit app was deployed on Streamlit Cloud and accesses the ML api deployed on Heroku
-
-##  Statistical Analysis - Survival Analysis
